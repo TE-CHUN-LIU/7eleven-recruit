@@ -141,13 +141,34 @@
     display: inline-block;
     background: var(--green);
     color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-top: 6px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(255,102,0,0.25);
+    transition: transform 0.12s, box-shadow 0.12s;
+  }
+  .badge.open {
+    background: var(--orange);
+    color: #fff;
+    cursor: pointer;
+  }
+  a.badge:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(255,102,0,0.35); }
+  a.badge:active { transform: scale(0.97); }
+
+  .shift-note {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 6px;
     font-size: 10px;
     font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 20px;
-    margin-top: 4px;
+    color: #fff;
+    background: var(--green);
+    border-radius: 10px;
+    vertical-align: middle;
   }
-  .badge.open { background: #999; }
 
   /* Section */
   .section {
@@ -365,8 +386,8 @@
     <div class="logo"><strong>7</strong>ELEVEN</div>
     <div class="brand-text">央大店・豐亞店<br>誠徵工讀夥伴</div>
   </div>
-  <div class="hero-title">現在<em>招募</em><br>工讀夥伴</div>
-  <div class="hero-sub">有便利商店經驗者更佳・歡迎加入</div>
+  <div class="hero-title">只剩 <em>3 個名額</em><br>央大夜班同伴</div>
+  <div class="hero-sub">時薪 260 起・一晚 2,080・長期穩定</div>
 </div>
 
 <!-- 班別 -->
@@ -375,33 +396,33 @@
     <div class="shift-label">早班</div>
     <div class="shift-time">07:00<br>— 15:00</div>
     <div class="shift-pay">時薪 197 元</div>
-    <div class="badge open">開放應徵</div>
+    <a class="badge open" href="https://forms.gle/mcc6Sj3dxEYzymWW7" target="_blank" rel="noopener">立即應徵 →</a>
   </div>
   <div class="shift">
     <div class="shift-label">中班</div>
     <div class="shift-time">10:00<br>— 18:00</div>
     <div class="shift-pay">時薪 197 元</div>
-    <div class="badge open">開放應徵</div>
+    <a class="badge open" href="https://forms.gle/mcc6Sj3dxEYzymWW7" target="_blank" rel="noopener">立即應徵 →</a>
   </div>
   <div class="shift">
     <div class="shift-label">晚班</div>
     <div class="shift-time">15:00<br>— 23:00</div>
     <div class="shift-pay">時薪 197 元</div>
-    <div class="badge open">開放應徵</div>
+    <a class="badge open" href="https://forms.gle/mcc6Sj3dxEYzymWW7" target="_blank" rel="noopener">立即應徵 →</a>
   </div>
 </div>
 <div class="shifts-row2">
   <div class="shift night">
-    <div class="shift-label">大夜班</div>
+    <div class="shift-label">大夜班<span class="shift-note">僅限央大店</span></div>
     <div class="shift-time">23:00<br>— 07:00</div>
-    <div class="shift-pay">含津貼 250 元</div>
-    <div class="badge open">開放應徵</div>
+    <div class="shift-pay">含津貼 260 元起</div>
+    <a class="badge open" href="https://forms.gle/mcc6Sj3dxEYzymWW7" target="_blank" rel="noopener">立即應徵 →</a>
   </div>
   <div class="shift">
     <div class="shift-label">短工時</div>
     <div class="shift-time">彈性<br>時段</div>
     <div class="shift-pay">時薪 197 元</div>
-    <div class="badge open">開放應徵</div>
+    <a class="badge open" href="https://forms.gle/mcc6Sj3dxEYzymWW7" target="_blank" rel="noopener">立即應徵 →</a>
   </div>
 </div>
 
@@ -411,7 +432,7 @@
   <div class="perks">
     <div class="perk">
       <div class="perk-icon">💰</div>
-      <div class="perk-text"><strong>優於市場薪資</strong>中班197・夜班250</div>
+      <div class="perk-text"><strong>優於市場薪資</strong>中班197・夜班260起</div>
     </div>
     <div class="perk">
       <div class="perk-icon">📅</div>
