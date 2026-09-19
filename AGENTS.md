@@ -12,5 +12,5 @@ bash scripts/ship.sh ship "commit 訊息"
 - 部署方式：沒有獨立部署步驟：push 到 main 即完成（或由 GitHub Actions／排程接手）。
 - commit 作者信箱固定用 repo 的 local 設定（127401827+TE-CHUN-LIU@users.noreply.github.com），commit 時不要另指定 email。
 - 直接推 main，不開 PR。收尾跑 lint／測試；改 UI 要掃 320／390／430／768／1024／1440 六種寬度。對外文案不放 emoji，回覆用繁體中文（台灣）。
-- 專案注意：門市招募頁；尚未連結 Vercel。
+- 專案注意：**招募頁已於 2026-09-19 搬到 banban.jiachun-mmt.com/recruit，正本在 `~/Projects/roster-next/public/recruit/index.html`，改內容請去那邊改並 `npm run ship`。** 本 repo 只剩 index.html／404.html 轉址頁（GitHub Pages，保留舊 IG／LINE 連結與 utm 參數），repo 必須維持公開否則舊連結 404。
 <!-- ship:end -->
